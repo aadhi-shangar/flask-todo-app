@@ -1,9 +1,4 @@
-/* =============================================
-   TaskFlow — Facebook-lite Minimal Theme
-   Palette: #1877F2 blue · #F0F2F5 bg · #FFFFFF cards
-   ============================================= */
 
-/* ── Reset & Base ── */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -68,9 +63,6 @@ a:hover { text-decoration: underline; }
 .background-decor,
 .blob { display: none; }
 
-/* =============================================
-   HEADER / NAV
-   ============================================= */
 .app-header {
     position: sticky;
     top: 0;
@@ -92,7 +84,6 @@ a:hover { text-decoration: underline; }
     gap: 16px;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -109,7 +100,7 @@ a:hover { text-decoration: underline; }
 }
 .logo:hover { text-decoration: none; }
 
-/* Nav menu */
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -163,9 +154,6 @@ a:hover { text-decoration: underline; }
 .logout-link { color: var(--danger); }
 .logout-link:hover { background: #fff0f0; color: var(--danger); }
 
-/* =============================================
-   LAYOUT
-   ============================================= */
 .main-content {
     flex: 1;
     padding: 28px 16px 48px;
@@ -176,9 +164,6 @@ a:hover { text-decoration: underline; }
     margin: 0 auto;
 }
 
-/* =============================================
-   FLASH ALERTS
-   ============================================= */
 .flash-container {
     margin-bottom: 16px;
     display: flex;
@@ -233,9 +218,6 @@ a:hover { text-decoration: underline; }
     color: var(--blue-dark);
 }
 
-/* =============================================
-   DASHBOARD
-   ============================================= */
 .dashboard-container {
     display: flex;
     flex-direction: column;
@@ -264,7 +246,6 @@ a:hover { text-decoration: underline; }
     margin-top: 2px;
 }
 
-/* ── Primary Button ── */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -287,7 +268,6 @@ a:hover { text-decoration: underline; }
     text-decoration: none;
 }
 
-/* ── Secondary Button ── */
 .btn-secondary {
     display: inline-flex;
     align-items: center;
@@ -310,9 +290,7 @@ a:hover { text-decoration: underline; }
 
 .btn-block { width: 100%; justify-content: center; }
 
-/* =============================================
-   STATS GRID
-   ============================================= */
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -359,7 +337,6 @@ a:hover { text-decoration: underline; }
     color: var(--text);
 }
 
-/* Progress card */
 .progress-card { flex-direction: column; align-items: flex-start; gap: 8px; }
 .progress-card .stat-info { width: 100%; }
 .progress-bar-bg {
@@ -377,9 +354,6 @@ a:hover { text-decoration: underline; }
     transition: width .4s ease;
 }
 
-/* =============================================
-   TODO LIST
-   ============================================= */
 .todo-section { display: flex; flex-direction: column; gap: 10px; }
 
 .section-title {
@@ -398,7 +372,6 @@ a:hover { text-decoration: underline; }
     gap: 8px;
 }
 
-/* Todo Card — signature: left blue accent bar */
 .todo-card {
     background: var(--card);
     border: 1px solid var(--border-light);
@@ -428,7 +401,6 @@ a:hover { text-decoration: underline; }
     min-width: 0;
 }
 
-/* Checkbox */
 .quick-toggle-form { display: flex; }
 .checkbox-btn {
     background: none;
@@ -444,7 +416,7 @@ a:hover { text-decoration: underline; }
 .checkbox-btn:hover { color: var(--blue); }
 .checkbox-btn.checked { color: var(--blue); }
 
-/* Todo text */
+
 .todo-details { min-width: 0; }
 .todo-title {
     font-size: .9375rem;
@@ -475,7 +447,6 @@ a:hover { text-decoration: underline; }
     margin-top: 4px;
 }
 
-/* Action buttons */
 .todo-actions {
     display: flex;
     align-items: center;
@@ -497,9 +468,6 @@ a:hover { text-decoration: underline; }
 .edit-btn:hover  { background: var(--blue-light); color: var(--blue); }
 .delete-btn:hover{ background: #fff0f0; color: var(--danger); }
 
-/* =============================================
-   EMPTY STATE
-   ============================================= */
 .empty-state {
     background: var(--card);
     border: 1px solid var(--border-light);
@@ -536,9 +504,6 @@ a:hover { text-decoration: underline; }
     margin-bottom: 6px;
 }
 
-/* =============================================
-   AUTH PAGES (login / register)
-   ============================================= */
 .auth-wrapper {
     display: flex;
     justify-content: center;
@@ -585,9 +550,6 @@ a:hover { text-decoration: underline; }
 }
 .auth-footer a { font-weight: 600; }
 
-/* =============================================
-   FORMS (shared: auth + todo form)
-   ============================================= */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -649,12 +611,9 @@ a:hover { text-decoration: underline; }
 .textarea-wrapper .input-icon { top: 12px; }
 .input-wrapper textarea { resize: vertical; min-height: 100px; }
 
-/* Date input */
 input[type="date"] { cursor: pointer; }
 
-/* =============================================
-   CUSTOM CHECKBOX (completed toggle in form)
-   ============================================= */
+
 .checkbox-form-group { margin-top: 4px; }
 
 .custom-checkbox-container {
@@ -699,9 +658,6 @@ input[type="date"] { cursor: pointer; }
     color: var(--text);
 }
 
-/* =============================================
-   TODO FORM PAGE
-   ============================================= */
 .form-wrapper {
     display: flex;
     justify-content: center;
@@ -759,9 +715,6 @@ input[type="date"] { cursor: pointer; }
     padding-top: 8px;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
 .app-footer {
     border-top: 1px solid var(--border-light);
     background: var(--white);
@@ -771,9 +724,7 @@ input[type="date"] { cursor: pointer; }
     color: var(--text-muted);
 }
 
-/* =============================================
-   RESPONSIVE
-   ============================================= */
+
 @media (max-width: 600px) {
     .header-container { padding: 0 14px; }
 
@@ -798,9 +749,6 @@ input[type="date"] { cursor: pointer; }
     .stats-grid { grid-template-columns: 1fr; }
 }
 
-/* =============================================
-   REDUCED MOTION
-   ============================================= */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { transition: none !important; }
 }
